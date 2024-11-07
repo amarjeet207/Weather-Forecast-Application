@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="input-icon">
+                <input type="text" placeholder="Enter City Name" id="inputCity">
+                <img src="./images/search.png" id="search-bttn">
+            </div>
+
+            <div class="err" style="display: none;"></div>
+          
+            <div class="showInfo">
+                <h3 class="city"></h3>
+                <img src="" id="weather-icon" >
+                <span>
+                    <p class="temp"></p>
+                    <p class="wind"></p>
+                    <p class="humidity"></p>
+                </span>
+            </div>
+        </div>
+
+        <div class="srollbar">
+            <div class="fiveDays" id="fiveDays">
+                <!-- Forecast will be dynamically populated here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
